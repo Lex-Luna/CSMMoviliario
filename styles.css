@@ -386,7 +386,7 @@ h2 {
   font-size: 1.6rem;
   cursor: pointer;
   border-radius: 30px;
-  margin-left: 10rem;
+  /* margin-left: 10rem; */
   margin-top: 0.5rem;
 }
 
@@ -424,6 +424,6 @@ legend {
   justify-content: center;
   background-color: #000;
   height: 100%;
-  color: #e9e60a;
+  color: #dddcc8;
   font-size: large;
 }
