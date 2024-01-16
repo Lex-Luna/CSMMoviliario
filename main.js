@@ -25,12 +25,13 @@ const saveCliente = (nombre, telefono, mail, mensaje) =>
 
 formulario.addEventListener("submit", async(e) => {
         e.preventDefault();
-        const nombre = formulario["Nombre"].value;
-        const telefono = formulario["Telefono"].value;
-        const mail = formulario["Mail"].value;
-        const mensaje = formulario["Mensaje"].value;
+        const nombre = formulario["Nombre"];
+        const telefono = formulario["Telefono"];
+        const mail = formulario["Mail"];
+        const mensaje = formulario["Mensaje"];
         /* console.log(nombre, telefono, mail, mensaje); */
-        await saveCliente(nombre, telefono, mail, mensaje);
+        await saveCliente(nombre.value, telefono.value, mail.value, mensaje.value);
+        nombre.focus();
         formulario.reset();
     })
     //console.log(response);
