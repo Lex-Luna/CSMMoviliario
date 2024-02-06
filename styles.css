@@ -37,8 +37,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 0.5rem;
   margin-top: 1rem;
+  gap: 0.5rem;
 }
 
 .parrafo {
@@ -46,6 +46,10 @@
   font-size: 1.6rem;
   text-align: justify;
   margin: 3rem;
+}
+
+.parrafo h3 {
+  align-items: center;
 }
 
 .imgMain {
@@ -314,8 +318,19 @@ h2 {
 }
 
 .Nota {
+  /* margin: 2rem; */
+  padding: 0.5rem;
   justify-content: center;
-  background-color: rgba(240, 119, 119, 0.3);
+  background-color: rgba(224, 0, 0, 0.696);
+  border-radius: 25px;
+}
+
+.Nota h3 {
+  font-size: 2rem;
+}
+
+.Nota p {
+  font-size: 1.2rem;
 }
 
 /* formulario */
@@ -426,4 +441,11 @@ legend {
   height: 100%;
   color: #dddcc8;
   font-size: large;
+  padding: 0.5rem;
+  /* place-items: center; */
+}
+
+.LogoFooter {
+  display: flex;
+  flex-direction: row;
 }

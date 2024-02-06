@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,394 +9,371 @@
     <title>CSMMobiliario</title>
 
     <link rel="icon" type="image/svg+xml" href="Imagenes/favicon.svg" />
-  </head>
+</head>
 
-  <body>
+<body>
     <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore-compat.js"></script>
 
     <header class="header">
-      <img src="Imagenes/Logo.png" alt="logo" height="50px" />
-      <div class="AlFinal">
-        <div class="redes">
-          <a
-            href="https://www.facebook.com/profile.php?id=100082937272463&mibextid=ZbWKwL"
-            class="button"
-            target="_blank"
-          >
-            <img
-              src="Imagenes/facebook.png"
-              alt="Icono de Facebook"
-              height="30px"
-            />
-          </a>
-          <a
-            href="https://instagram.com/csm_mobiliario?igshid=MzRlODBiNWFlZA=="
-            class="button"
-            target="_blank"
-          >
-            <img
-              src="Imagenes/instagram.png"
-              alt="Icono de Instagram"
-              height="30px"
-            />
-          </a>
-          <a
-            href="mailto:csmobiliario95@gmail.com"
-            class="button"
-            target="_blank"
-          >
-            <img
-              src="Imagenes/email.png"
-              alt="Icono de WhatsApp"
-              height="30px"
-            />
-          </a>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">
+        <img src="Imagenes/Logo.png" alt="logo" height="50px" />
+        <div class="AlFinal">
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100082937272463&mibextid=ZbWKwL" class="button" target="_blank">
+                    <img src="Imagenes/facebook.png" alt="Icono de Facebook" height="30px" />
+                </a>
+                <a href="https://instagram.com/csm_mobiliario?igshid=MzRlODBiNWFlZA==" class="button" target="_blank">
+                    <img src="Imagenes/instagram.png" alt="Icono de Instagram" height="30px" />
+                </a>
+                <a href="mailto:csmobiliario95@gmail.com" class="button" target="_blank">
+                    <img src="Imagenes/email.png" alt="Icono de WhatsApp" height="30px" />
+                </a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
             <i class="fa fa-bars">
               <img src="Imagenes/menu.png" height="25px" />
             </i>
           </button>
-          <div class="dropdown-content">
-            <a href="#Camas">Camas</a>
-            <a href="#Sillas">Sillas</a>
-            <a href="#Regatones">Regatones</a>
-            <a href="#Estanterias">Estanterias</a>
-            <a href="#Acero">Acero Inoxidable</a>
-            <a href="#Otros">Otros</a>
-            <a href="#contacto">Contacto</a>
-          </div>
+                <div class="dropdown-content">
+                    <a href="#Camas">Camas</a>
+                    <a href="#Sillas">Sillas</a>
+                    <a href="#Regatones">Regatones</a>
+                    <a href="#Estanterias">Estanterias</a>
+                    <a href="#Acero">Acero Inoxidable</a>
+                    <a href="#Otros">Otros</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </div>
         </div>
-      </div>
     </header>
 
     <div class="contenedor">
-      <section class="hero">
-        <div class="contenido-hero">
-          <h2 class="titulo">CSM<span>Mobiliario</span></h2>
+        <section class="hero">
+            <div class="contenido-hero">
+                <h2 class="titulo">CSM<span>Mobiliario</span></h2>
 
-          <p>
-            <!-- Icono de Ubicacion -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-map-pin"
-              width="88"
-              height="88"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#FFC107"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
+                <p>
+                    <!-- Icono de Ubicacion -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" />
               <circle cx="12" cy="11" r="3" />
               <path
                 d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"
               />
             </svg>
-          </p>
-          <p class="ubicacion">Quito, Ecuador</p>
-        </div>
-      </section>
+                </p>
+                <p class="ubicacion">Quito, Ecuador</p>
+            </div>
+        </section>
     </div>
 
     <main class="parrafo">
-      <img
-        class="imgMain"
-        src="Imagenes/TarjetaInicio.jpeg"
-        alt="tarjeta_Inicial"
-      />
-      <p>
-        <br />
-        <strong>
+        <img class="imgMain" src="Imagenes/TarjetaInicio.jpeg" alt="tarjeta_Inicial" />
+        <h3>
+            <i>
           Bienvenidos a CSM Mobiliario, Transformando Espacios con Elegancia y
-          Durabilidad En CSM Mobiliario.</strong
-        >
-        <br />
-        <br />
-
-        Nos enorgullece presentar soluciones innovadoras en mobiliario metálico
-        que no solo cumplen con las expectativas estéticas, sino que también
-        aseguran la funcionalidad y durabilidad que su espacio merece.
-        <br />
-        <br />Somos una empresa especializada en el diseño y fabricación de
-        camas metalicas, camas plegables, estanterías metálicas, mesas, sillas y
-        mobiliario en acero inoxidable que fusionan la resistencia del acero con
-        un estilo moderno y sofisticado.
-      </p>
+          Durabilidad
+        </i>
+        </h3>
+        <p>
+            <br />
+            <strong><i> </i></strong> En CSM Mobiliario nos enorgullece presentar soluciones innovadoras en mobiliario metálico que no solo cumplen con las expectativas estéticas, sino que también aseguran la funcionalidad y durabilidad que su espacio
+            merece.
+            <br />
+            <br />Somos una empresa especializada en el diseño y fabricación de camas metalicas, camas plegables, estanterías metálicas, mesas, sillas y mobiliario en acero inoxidable que fusionan la resistencia del acero con un estilo moderno y sofisticado.
+        </p>
     </main>
 
     <div class="Secciones">
-      <div id="Camas" class="Fix"></div>
+        <div id="Camas" class="Fix"></div>
 
-      <h2>Camas</h2>
+        <h2>Camas</h2>
 
-      <div class="container-items">
-        <div class="item">
-          <figure>
-            <img src="Imagenes/Cama_desplegable.jpg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Cama Plegable con colchon</h3>
-            <p class="price">$99</p>
-          </div>
+        <div class="container-items">
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/CamaPle.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Cama Plegable con Colchon (10cm)</h3>
+                    <p class="price">$105</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/CamaPlegable01.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Cama Plegable con Colchon (7cm)</h3>
+                    <p class="price">$95</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/CamasinColchon.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Cama Sola</h3>
+                    <p class="price">$80</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/CamaTapizada.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Cama Tapizada</h3>
+                    <p class="price">$145</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/CamaMadera.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Cama de Madera</h3>
+                    <p class="price">$140</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/LiteraMetalica.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Litera Metalica 1 Plz</h3>
+                    <p class="price">$150</p>
+                </div>
+            </div>
         </div>
 
-        <div class="item">
-          <figure>
-            <img src="Imagenes/CamaPlegable01.jpeg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Cama Plegable</h3>
-            <p class="price">$99</p>
-          </div>
+        <div id="Sillas" class="Fix"></div>
+
+        <h2>Sillas</h2>
+
+        <div class="container-items">
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/SillaGrafitti.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Silla Grafitti</h3>
+                    <p class="price">$39</p>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/SillaMixta.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Silla Mixta</h3>
+                    <p class="price">$23,99</p>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/SillaParma.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Silla Parma</h3>
+                    <p class="price">$23,99</p>
+                </div>
+            </div>
         </div>
 
-        <div class="item">
-          <figure>
-            <img src="Imagenes/CamasinColchon.jpeg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Cama Sola</h3>
-            <p class="price">$80</p>
-          </div>
+        <div id="Regatones" class="Fix"></div>
+
+        <h2>Regatones</h2>
+
+        <div class="container-items">
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/Regaton1.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Regaton Angulo</h3>
+                    <!-- <p class="price">$4,99</p> -->
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/RegatonBaston.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Regaton Baston</h3>
+                    <!-- <p class="price">$23,99</p> -->
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/Regaton3.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Regatones Cuadrados</h3>
+                    <p class="price">Variedad de medidas</p>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/Regaton4.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Regaton Redondos</h3>
+                    <p class="price">Variedad de medidas</p>
+                </div>
+            </div>
         </div>
 
-        <div class="item">
-          <figure>
-            <img src="Imagenes/CamaTapizada02.png" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Cama Tapizada</h3>
-            <p class="price">$185</p>
-          </div>
+        <div id="Estanterias" class="Fix"></div>
+
+        <h2>Estanterias</h2>
+
+        <div class="container-items">
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/Estante1.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Estanteria 90x30</h3>
+                    <p class="price">$120</p>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/Estante2.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Estanteria 3 bandejas</h3>
+                    <p class="price">$50</p>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/Estanteria4Latas.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Estanteria 4 Bandejas</h3>
+                    <p class="price">$85</p>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/EstanteriaGris.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Estanteria 90x30 Gris</h3>
+                    <p class="price">$95</p>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/EstandMixto.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Estanteria Mixta</h3>
+                    <p class="price">$180</p>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/EstanteNegra.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Estanteria 90x30 Negra</h3>
+                    <p class="price">$99</p>
+                </div>
+            </div>
         </div>
 
-        <div class="item">
-          <figure>
-            <img src="Imagenes/Oferta_cama_colchon.jpg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Cama y Colchon</h3>
-            <p class="price">$220</p>
-          </div>
-        </div>
-      </div>
+        <div id="Acero" class="Fix"></div>
 
-      <div id="Sillas" class="Fix"></div>
+        <h2>Acero Inoxidable</h2>
 
-      <h2>Sillas</h2>
+        <div class="container-items">
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/MesAcero.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Mesa de Acero</h3>
+                    <p class="price">$95</p>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/MesaDoble.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Mesa Doble</h3>
+                    <p class="price">$125</p>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/EstanteriaAcero.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Estanteria 90x30 Acero</h3>
+                    <p class="price">$180</p>
+                </div>
+            </div>
+        </div>
 
-      <div class="container-items">
-        <div class="item">
-          <figure>
-            <img src="Imagenes/SillaLuca.jpeg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Silla Lucca</h3>
-            <p class="price">$23,99</p>
-          </div>
-        </div>
-        <div class="item">
-          <figure>
-            <img src="Imagenes/SIllaMadera.jpeg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Silla de madera</h3>
-            <p class="price">$23,99</p>
-          </div>
-        </div>
-        <div class="item">
-          <figure>
-            <img src="Imagenes/SillaParma.jpeg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Silla Parma</h3>
-            <p class="price">$23,99</p>
-          </div>
-        </div>
-      </div>
+        <div id="Otros" class="Fix"></div>
 
-      <div id="Regatones" class="Fix"></div>
+        <h2>Otros</h2>
 
-      <h2>Regatones</h2>
-
-      <div class="container-items">
-        <div class="item">
-          <figure>
-            <img src="Imagenes/Regaton1.jpeg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Regaton Angulo</h3>
-            <!-- <p class="price">$4,99</p> -->
-          </div>
+        <div class="container-items">
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/almohada.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Almohada de Plumon</h3>
+                    <p class="price">$4,99</p>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/Escritorio.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Escritorio Personal</h3>
+                    <p class="price">$95</p>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/LockerMetalico.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Locker 2 Puertas</h3>
+                    <p class="price">$145</p>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="Imagenes/locker12puertas.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h3>Locker 12 Puertas</h3>
+                    <p class="price">$490</p>
+                </div>
+            </div>
         </div>
-        <div class="item">
-          <figure>
-            <img src="Imagenes/RegatonBaston.jpeg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Regaton Baston</h3>
-            <!-- <p class="price">$23,99</p> -->
-          </div>
-        </div>
-        <div class="item">
-          <figure>
-            <img src="Imagenes/Regaton3.jpeg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Regatones Cuadrados</h3>
-            <p class="price">Variedad de medidas</p>
-          </div>
-        </div>
-        <div class="item">
-          <figure>
-            <img src="Imagenes/Regaton4.jpeg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Regaton Redondos</h3>
-            <p class="price">Variedad de medidas</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="Estanterias" class="Fix"></div>
-
-      <h2>Estanterias</h2>
-
-      <div class="container-items">
-        <div class="item">
-          <figure>
-            <img src="Imagenes/Estante1.jpeg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Estanteria 90x30</h3>
-            <p class="price">$120</p>
-          </div>
-        </div>
-        <div class="item">
-          <figure>
-            <img src="Imagenes/Estante2.jpeg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Estanteria 3 bandejas</h3>
-            <p class="price">$50</p>
-          </div>
-        </div>
-        <div class="item">
-          <figure>
-            <img src="Imagenes/Estanteria4Latas.jpeg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Estanteria 4 Bandejas</h3>
-            <p class="price">$85</p>
-          </div>
-        </div>
-        <div class="item">
-          <figure>
-            <img src="Imagenes/EstanteriaGris.jpeg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Estanteria 90x30 Gris</h3>
-            <p class="price">$95</p>
-          </div>
-        </div>
-        <div class="item">
-          <figure>
-            <img src="Imagenes/EstanteriaMixta.jpeg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Estanteria Mixta</h3>
-            <p class="price">$180</p>
-          </div>
-        </div>
-        <div class="item">
-          <figure>
-            <img src="Imagenes/EstanteriaNegra.jpeg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Estanteria 90x30 Negra</h3>
-            <p class="price">$100</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="Acero" class="Fix"></div>
-
-      <h2>Acero Inoxidable</h2>
-
-      <div class="container-items">
-        <div class="item">
-          <figure>
-            <img src="Imagenes/MesaAcero.jpeg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Mesa de Acero</h3>
-            <p class="price">$95</p>
-          </div>
-        </div>
-        <div class="item">
-          <figure>
-            <img src="Imagenes/MesaDoble.jpeg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Mesa Doble</h3>
-            <p class="price">$125</p>
-          </div>
-        </div>
-        <div class="item">
-          <figure>
-            <img src="Imagenes/EstanteriaAcero.jpeg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Estanteria 90x30 Acero</h3>
-            <p class="price">$180</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="Otros" class="Fix"></div>
-
-      <h2>Otros</h2>
-
-      <div class="container-items">
-        <div class="item">
-          <figure>
-            <img src="Imagenes/almohada.jpeg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Almohada de Plumon</h3>
-            <p class="price">$4,99</p>
-          </div>
-        </div>
-        <div class="item">
-          <figure>
-            <img src="Imagenes/Escritorio.jpeg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Escritorio Personal</h3>
-            <p class="price">$28,99</p>
-          </div>
-        </div>
-        <div class="item">
-          <figure>
-            <img src="Imagenes/ColchonetaEconomica.jpg" alt="producto" />
-          </figure>
-          <div class="info-product">
-            <h3>Colchoneta Economica</h3>
-            <p class="price">$23,99</p>
-          </div>
-        </div>
-      </div>
-      <div class="Nota">
-        <h3>Nota:</h3>
-        <p>
-          Los precios son referenciales y pueden variar dependiendo de las
-          especificaciones del producto, materiales y detalles que desee el
-          cliente.
+        <div class="Nota">
+            <h3>Nota:</h3>
+            <p>
+                <b>
+            Los precios son referenciales y pueden variar dependiendo las
+            especificaciones del producto, materiales y detalles que desee el
+            cliente.</b
+          >
         </p>
       </div>
 
@@ -455,12 +433,13 @@
       <img src="Imagenes/whatsapp.png" alt="Icono de WhatsApp" height="60px" />
     </a>
     <footer class="footer">
-      <p>Todos los derechos reservados por:_</p>
-      <img src="Imagenes/favicon.svg" alt="" width="18px" />
-      <p>CSMMoviliario.</p>
-    </footer>
-    <!-- <script src="index.js"></script> -->
+      <img src="Imagenes/favicon.svg" alt="" width="18px" /></div>
+      <b>CSMMobiliario</b></p>
 
-    <script src="main.js"></script>
-  </body>
+            </footer>
+            <!-- <script src="index.js"></script> -->
+
+            <script src="main.js"></script>
+</body>
+
 </html>
