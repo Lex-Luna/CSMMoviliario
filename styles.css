@@ -95,10 +95,10 @@
   background-color: rgba(234, 231, 231, 0.7);
 }
 
-.dropdown:hover .dropdown-content {
+/* .dropdown:hover .dropdown-content {
   display: block;
   font-size: 1.5rem;
-}
+} */
 
 /* media query para telefonos */
 

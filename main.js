@@ -1,5 +1,18 @@
-/* var firebase = require('firebase/compat/app');
-require('firebase/compat/firestore'); */
+// Seccion Menu Hamburguesa
+// Obtén el botón dropdown
+var dropdown = document.querySelector('.dropdown');
+
+// Agrega un evento de clic al botón dropdown
+dropdown.addEventListener('click', function(event) {
+    // Obtén el contenido del dropdown
+    var dropdownContent = this.querySelector('.dropdown-content');
+    // Alterna la visibilidad del contenido del dropdown
+    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+});
+
+//Termina  Seccion Menu Hamburguesa
+
+// Seccion Firebase
 
 const firebaseConfig = {
     apiKey: "AIzaSyB3AJBzqkZE8zVLZ8gJAVRkOeLyBl1aKao",
@@ -20,9 +33,6 @@ const saveCliente = (nombre, telefono, mail, mensaje) =>
         mail,
         mensaje
     })
-
-
-
 formulario.addEventListener("submit", async(e) => {
         e.preventDefault();
         const nombre = formulario["Nombre"];
@@ -40,4 +50,4 @@ formulario.addEventListener("submit", async(e) => {
         }
 
     })
-    //console.log(response);
+    // Termina la seccion Firebase
