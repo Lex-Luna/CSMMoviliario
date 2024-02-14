@@ -29,9 +29,15 @@ formulario.addEventListener("submit", async(e) => {
         const telefono = formulario["Telefono"];
         const mail = formulario["Mail"];
         const mensaje = formulario["Mensaje"];
-        /* console.log(nombre, telefono, mail, mensaje); */
-        await saveCliente(nombre.value, telefono.value, mail.value, mensaje.value);
-        nombre.focus();
-        formulario.reset();
+        try {
+            /* console.log(nombre, telefono, mail, mensaje); */
+            await saveCliente(nombre.value, telefono.value, mail.value, mensaje.value);
+            alert('La información ha sido enviada correctamente');
+            nombre.focus();
+            formulario.reset();
+        } catch (error) {
+            alert("no ha sido posible enviar los datos");
+        }
+
     })
     //console.log(response);
