@@ -90,6 +90,7 @@
 .dropdown-content a {
   color: black;
   padding: 1rem 1rem;
+  font-size: 1.5rem;
   text-decoration: none;
   display: block;
   background-color: rgba(234, 231, 231, 0.7);
