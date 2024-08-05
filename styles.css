@@ -1,110 +1,12 @@
 *::after,
 *::before,
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .header {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5.5rem;
-  z-index: 1000;
-  padding: 0;
-  background-color: white;
-}
-
-.csmLogo {
-  padding: -2;
-}
-
-.AlFinal {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: transparent;
-}
-
-.redes {
-  background-color: transparent;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 1rem;
-  gap: 0.5rem;
-}
-
-.parrafo {
-  background-color: transparent;
-  font-size: 1.6rem;
-  text-align: justify;
-  margin: 3rem;
-}
-
-.parrafo h3 {
-  align-items: center;
-}
-
-.imgMain {
-  float: left;
-  height: 20rem;
-  margin-right: 1rem;
-}
-
-/*Seccion Navegacion */
-
-.dropbtn {
-  background-color: transparent;
-  padding: 1.6rem;
-  font-size: 2.6rem;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown {
-  display: flex;
-  align-items: center;
-  position: relative;
-  display: inline-block;
-  margin-top: 0;
-  padding: 0;
-}
-
-.dropdown-content {
-  display: none;
-  right: 0;
-  position: absolute;
-  min-width: 1.6rem;
-  z-index: 1;
-  padding: 0;
-  margin-bottom: 3rem;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 1rem 1rem;
-  font-size: 1.5rem;
-  text-decoration: none;
-  display: block;
-  background-color: rgba(234, 231, 231, 0.7);
-}
-
-/* .dropdown:hover .dropdown-content {
-  display: block;
-  font-size: 1.5rem;
-} */
-
-/* media query para telefonos */
-
-@media (min-width: 400px) {
-  .header {
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -113,340 +15,458 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 3.5rem;
+    height: 5.5rem;
     z-index: 1000;
     padding: 0;
     background-color: white;
-  }
-  .AlFinal {
+    animation: enhance-header;
+    animation-timeline: scroll(root);
+}
+
+.logo {
+    border-radius: 20px;
+    background-color: red;
+}
+
+.AlFinal {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: transparent;
-  }
-  .redes {
-    margin-right: 1rem;
-    margin-top: 2.5rem;
-  }
-  .csmLogo {
-    padding: -2;
-  }
 }
 
+.redes {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+    gap: 0.5rem;
+}
+
+.parrafo {
+    background-color: transparent;
+    font-size: 1.6rem;
+    text-align: justify;
+    margin: 3rem;
+}
+
+.parrafo h3 {
+    align-items: center;
+}
+
+.imgMain {
+    float: left;
+    height: 20rem;
+    margin-right: 1rem;
+}
+
+
+/*Seccion Navegacion */
+
+.dropbtn {
+    background-color: transparent;
+    padding: 1.6rem;
+    font-size: 2.6rem;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    margin-top: 0;
+    padding: 0;
+}
+
+.dropdown-content {
+    display: none;
+    right: 0;
+    position: absolute;
+    min-width: 1.6rem;
+    z-index: 1;
+    padding: 0;
+    margin-bottom: 3rem;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: block;
+    background-color: rgba(234, 231, 231, 0.7);
+}
+
+
+/* .dropdown:hover .dropdown-content {
+  display: block;
+  font-size: 1.5rem;
+} */
+
+
+/* media query para telefonos */
+
+@media (min-width: 400px) {
+    .header {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3.5rem;
+        z-index: 1000;
+        padding: 0;
+        background-color: white;
+    }
+    .AlFinal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: transparent;
+    }
+    .redes {
+        margin-right: 1rem;
+        margin-top: 2.5rem;
+    }
+    .csmLogo {
+        padding: -2;
+    }
+}
+
+
 /* Fin de Seccion Navegacion */
+
 
 /*Seccion Presentacion */
 
 .hero {
-  display: flex;
-  background-image: url(Imagenes/TarjetaMobiliario02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 40rem;
-  position: relative;
-  margin-bottom: 2rem;
-  margin-top: 0rem;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
-  /* margin: 2rem; */
-  max-width: 100%;
+    display: flex;
+    background-image: url(Imagenes/TarjetaMobiliario02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+    position: relative;
+    margin-bottom: 2rem;
+    margin-top: 0rem;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    /* margin: 2rem; */
+    max-width: 100%;
 }
 
 .ubicacion {
-  color: white;
-  display: flex;
+    color: white;
+    display: flex;
 }
 
 .contenido-hero {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.8);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .contenido-hero h2,
 .concontenido-hero p {
-  font-size: 2.6rem;
+    font-size: 2.6rem;
 }
+
 
 /* Seccion Articulos */
 
 .Fix {
-  height: 7rem;
+    height: 7rem;
 }
 
 .Secciones {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .titulo {
-  color: white;
-  font-family: monospace;
-  font-size: 2.8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
+    color: white;
+    font-family: monospace;
+    font-size: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
 }
 
 .titulo span {
-  font-size: 2.5rem;
-  color: #5f6a6a;
-  font-family: monospace;
+    font-size: 2.5rem;
+    color: #5f6a6a;
+    font-family: monospace;
 }
 
 body {
-  /* margin: 0 auto; */
-  margin-top: 8rem;
-  font-family: "Lato";
-  color: #333;
-  /* display: flex;
+    /* margin: 0 auto; */
+    margin-top: 8rem;
+    font-family: "Lato";
+    color: #333;
+    /* display: flex;
   justify-content: center; */
 }
 
 .icon-cart {
-  width: 40px;
-  height: 40px;
-  stroke: #000;
+    width: 40px;
+    height: 40px;
+    stroke: #000;
 }
 
 .icon-cart:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
+
 
 /* Header */
 
 h2 {
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  font-style: italic;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-style: italic;
 }
+
 
 /* Main */
 
 .container-items {
-  justify-content: center;
-  display: grid;
-  background-color: transparent;
+    justify-content: center;
+    display: grid;
+    background-color: transparent;
 }
 
 .item {
-  border-radius: 10px;
-  max-width: 15rem;
-  min-height: 32rem;
-  display: grid;
-  align-items: center;
-  justify-content: center;
+    border-radius: 10px;
+    max-width: 15rem;
+    min-height: 32rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 .item:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .item img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-  transition: all 0.5s;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.5s;
 }
 
 .item figure {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .item:hover img {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .info-product {
-  padding: 15px 30px;
-  line-height: 2;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .price {
-  font-size: 18px;
-  font-weight: 900;
+    font-size: 18px;
+    font-weight: 900;
 }
 
 .info-product button {
-  border: none;
-  background: none;
-  background-color: #000;
-  color: #fff;
-  padding: 15px 10px;
-  cursor: pointer;
-  border-radius: 25px;
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 25px;
 }
 
 @media (min-width: 370px) {
-  .container-items {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-  }
+    .container-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
 }
 
 @media (min-width: 768px) {
-  .container-items {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-  }
+    .container-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
 }
 
 .Nota {
-  /* margin: 2rem; */
-  padding: 0.5rem;
-  justify-content: center;
-  background-color: rgba(224, 0, 0, 0.696);
-  border-radius: 25px;
+    /* margin: 2rem; */
+    padding: 0.5rem;
+    justify-content: center;
+    background-color: rgba(224, 0, 0, 0.696);
+    border-radius: 25px;
 }
 
 .Nota h3 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 .Nota p {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
+
 
 /* formulario */
 
 .campo label {
-  color: #fff;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  display: block;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    display: block;
 }
 
 .campo input[type="text"],
 .campo input[type="tel"],
 .campo input[type="mail"],
 .campo textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border: none;
-  border-radius: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
 }
 
 .contenedor-campos {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background-color: rgba(0, 0, 0, 0.795);
-  padding: 2rem;
-  border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.795);
+    padding: 2rem;
+    border-radius: 2rem;
 }
 
 .campo {
-  margin-bottom: 1rem;
-  width: 100%;
+    margin-bottom: 1rem;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
-  :is(.campo)
-    :is(
-      input[type="text"],
-      input[type="text"],
-      input[type="tel"],
-      input[type="mail"],
-      textarea
-    ) {
-    flex: 1;
-  }
+     :is(.campo) :is( input[type="text"], input[type="text"], input[type="tel"], input[type="mail"], textarea) {
+        flex: 1;
+    }
 }
 
 .w-100 {
-  flex: 0 0 100%;
+    flex: 0 0 100%;
 }
 
 .campo textarea {
-  height: 4rem;
+    height: 4rem;
 }
 
 .enviar {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .submit-button .button {
-  background-color: #0d060b;
-  border: none;
-  color: white;
-  padding: 0.5rem;
-  text-decoration: none;
-  font-size: 1.6rem;
-  cursor: pointer;
-  border-radius: 30px;
-  /* margin-left: 10rem; */
-  margin-top: 0.5rem;
+    background-color: #0d060b;
+    border: none;
+    color: white;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 30px;
+    /* margin-left: 10rem; */
+    margin-top: 0.5rem;
 }
 
 legend {
-  margin: 1rem;
-  font-size: 1.4rem;
-  display: flex;
-  justify-content: center;
-  color: rgb(228, 51, 11);
-  font-weight: bold;
+    margin: 1rem;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    color: rgb(228, 51, 11);
+    font-weight: bold;
 }
 
 .whatsapp-button {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 40px;
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 3rem;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 3rem;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    &:hover {
+        scale: 1.2
+    }
 }
 
 .whatsapp-button img {
-  width: 100%;
+    width: 100%;
 }
 
 .footer {
-  margin-top: 1.5rem;
-  display: flex;
-  justify-content: center;
-  background-color: #000;
-  height: 100%;
-  color: #dddcc8;
-  font-size: large;
-  padding: 0.5rem;
-  /* place-items: center; */
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    height: 100%;
+    color: #dddcc8;
+    font-size: large;
+    padding: 0.5rem;
+    /* place-items: center; */
 }
 
 .LogoFooter {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
+}
+
+@keyframes enhance-header {
+    from {
+        opacity: 1;
+        translate: 0 10px;
+    }
+    to {
+        opacity: .3;
+        backdrop-filter: blur(5px);
+        translate: 0 0;
+    }
 }
