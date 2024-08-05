@@ -21,6 +21,7 @@
     background-color: white;
     animation: enhance-header;
     animation-timeline: scroll(root);
+    /* animation-range: entry 30px; */
 }
 
 .logo {
@@ -460,13 +461,14 @@ legend {
 }
 
 @keyframes enhance-header {
-    from {
+    0% {
         opacity: 1;
-        translate: 0 10px;
     }
-    to {
-        opacity: .3;
+    10% {
+        opacity: .4;
         backdrop-filter: blur(5px);
-        translate: 0 0;
+    }
+    100% {
+        opacity: .4;
     }
 }
